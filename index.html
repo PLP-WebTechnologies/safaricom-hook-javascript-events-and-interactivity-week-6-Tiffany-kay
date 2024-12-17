@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Interactive Webpage</h1>
+    <button id="toggleButton">Toggle Background Color</button>
+    <div>
+        <label for="textSizeSlider">Adjust Text Size:</label>
+        <input type="range" id="textSizeSlider" min="10" max="50" value="16">
+    </div>
+    <p id="dynamicText">This text will change size based on the slider.</p>
+    <button id="openModalButton">Open Modal</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalButton" class="close">&times;</span>
+            <p>This is a modal window.</p>
+        </div>
+    </div>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <small>Error message</small>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <small>Error message</small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <small>Error message</small>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>
+        <label for="dropdown">Choose an option:</label>
+        <select id="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <p id="dropdownMessage"></p>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
